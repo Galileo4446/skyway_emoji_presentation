@@ -104,6 +104,7 @@ async function getLandMarks(){
     // myFaceData = await faceapi.detectSingleFace(video).withFaceLandmarks();
     myFaceData = await faceapi.detectSingleFace(myVideo).withFaceExpressions();
     myFaceHappy = (myFaceData.expressions.happy);
+    console.log(myFaceData.expressions);
     console.log(`自分:${myFaceHappy}`);
 
     // 相手の映像
